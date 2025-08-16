@@ -7,6 +7,7 @@ export function App() {
 
       <Header />
       <Home />
+
       <h1 className="border border-red-500">aaa</h1>
     </div>
   )
