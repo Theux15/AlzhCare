@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 export function Header({ transparent = false}){
     const [isDark,setDark] = useState(false)
@@ -19,11 +20,11 @@ export function Header({ transparent = false}){
                 </div>
 
                 <div className="flex gap-8 text-dark-purple text-2xl dark:text-light-mode-purple">
-                    <a href="./Produto.jsx">O produto</a>
-                    <a href="">Guia</a>
-                    <a href="">Quem somos</a>
-                    <a href="">Jogo</a>
-                
+                    <Link to="/produto">O produto</Link>
+                    <Link to="/">Guia</Link>
+                    <Link to="/">Quem somos</Link>
+                    <Link to="/">Jogo</Link>
+
 
                     <button onClick={AAAAA}>
                         {isDark?(
