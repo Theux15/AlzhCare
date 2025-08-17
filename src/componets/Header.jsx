@@ -19,7 +19,7 @@ export function Header({ transparent = false}){
                 </div>
 
                 <div className="flex gap-8 text-dark-purple text-2xl dark:text-light-mode-purple">
-                    <a href="">O produto</a>
+                    <a href="./Produto.jsx">O produto</a>
                     <a href="">Guia</a>
                     <a href="">Quem somos</a>
                     <a href="">Jogo</a>
