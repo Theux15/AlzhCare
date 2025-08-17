@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export function Header(){
+export function Header({ transparent = false}){
     const [isDark,setDark] = useState(false)
 
     const AAAAA = () =>{
@@ -8,11 +8,12 @@ export function Header(){
     }
 
     return(
-        <header>
-
         <div className={isDark? "dark" : ""}>
             
-            <div className="bg-light-purple h-24 px-6 flex items-center justify-between dark:bg-dark-mode-purple ">
+            <div className={`
+    ${transparent ? "bg-transparent !bg-none" : "bg-light-purple dark:bg-dark-mode-purple"} 
+    h-24 px-6 flex items-center justify-between
+  `}>
                 <div className="text-dark-purple font-bold text-5xl dark:text-light-mode-purple">
                     <h1>AlzhCare</h1>
                 </div>
@@ -54,7 +55,6 @@ export function Header(){
          
         
             
-        </header>
         
     )
     
