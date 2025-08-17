@@ -47,10 +47,11 @@ export function Header({ transparent = false}){
                           </svg>
                         )}
                     </button>
+                  
                     
                 </div>
-           
             </div>
+              <div className="mt-4 mx-auto" style={{ width: '97%', height: '2px', backgroundColor: 'white' }}></div>
         </div>  
          
         
