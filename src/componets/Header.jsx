@@ -21,7 +21,7 @@ export function Header({ transparent = false }) {
               <Link to="/">AlzhCare</Link>
             </div>
 
-            <div className="flex gap-8 text-dark-purple text-3xl dark:text-light-mode-purple flex-row items-center">
+            <div className="flex gap-8 text-dark-purple text-2xl dark:text-light-mode-purple flex-row items-center">
               <Link to="/produto">O produto</Link>
               <Link to="/guia">Guia</Link>
               <Link to="/quemSomos">Quem somos</Link>
@@ -55,7 +55,7 @@ export function Header({ transparent = false }) {
             </div>
           </div>
           <div>
-            <div className="mt-4 mx-auto" style={{ width: '97%', height: '2px', backgroundColor: 'white' }}></div>
+            <div className="mt-4 mx-auto w-[97%] h-[2px] bg-dark-purple dark:bg-light-purple"></div>
           </div>
         </div>
       </div>
