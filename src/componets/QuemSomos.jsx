@@ -3,9 +3,9 @@ import { Header } from "./Header.jsx"
 export function QuemSomos(){
     const integrantes = [
         { nome: "Matheus", img: "https://via.placeholder.com/150" },
-        { nome: "Giovanna", img: "https://via.placeholder.com/150" },
+        { nome: "Giovanna", img: "src/images/fotogi.jpeg" },
         { nome: "Maria Luiza", img: "https://via.placeholder.com/150" },
-        { nome: "Pedro Henrique", img: "https://via.placeholder.com/150" },
+        { nome: "Pedro Henrique", img: "src/images/fotoduarte.jpeg" },
     ]
 
     return(
@@ -40,21 +40,26 @@ export function QuemSomos(){
             </div>
 
 
-            <div className="bg-light-purple py-12 text-white text-center">
+            <div className="bg-light-purple py-12 text-white text-center"> 
                 <h2 className="text-4xl font-bold mb-4 [color:var(--color-dark-purple)]">Entre em contato:</h2>
                 <p className="text-lg mb-6 font-semibold [color:var(--color-dark-purple)]">
                     Ficou com alguma dúvida? Tem alguma sugestão? 
                     Entre em contato conosco através dos nossos meios de comunicação:
                 </p>
 
-                <div className="flex flex-col sm:flex-row justify-center gap-8 text-lg font-medium font-semibold [color:var(--color-purple-home)]">
-                    <div className="flex items-center gap-2">
+                <div className="my-4 mx-auto w-[97%] h-[2px] bg-chatcolor "></div>
+
+                <div className="flex flex-col sm:flex-row justify-center gap-40 text-lg font-medium font-semibold [color:var(--color-purple-home)]">
+                    <div className="flex items-center gap-1">
+                        <img src="src/images/telefone.png" alt="Telefone" className="w-6 h-6" />
                         <p>119487684</p>
                     </div>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-1">
+                        <img src="src/images/rede.png" alt="Rede" className="w-6 h-6" />
                         <p>@noses</p>
                     </div>
-                    <div className="flex items-center gap-2 ">
+                    <div className="flex items-center gap-1 ">
+                        <img src="src/images/email.png" alt="Email" className="w-6 h-6" />
                         <p>alzhcare@gmail.com</p>
                     </div>
                 </div>
