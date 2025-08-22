@@ -28,19 +28,19 @@ export function Produto(){
             <hr />
 
             <div>
-                <div>
-                    <div className="bg-[var(--color-dark-purple)]">
-                        <div>
-                        <img className="w-[150px] h-[100px]" src="https://i.pinimg.com/736x/f5/a5/a8/f5a5a8f283a8a2120da1e9e686e7b0ac.jpg" alt="" />
+                <div className=" [color:var(--color-white)] bg-[var(--color-dark-purple)] flex flex-row rounded-2xl">
+                    <div className="">
+                        <img className="w-[150px] h-[100px] rounded-2xl" src="https://i.pinimg.com/736x/f5/a5/a8/f5a5a8f283a8a2120da1e9e686e7b0ac.jpg" alt="" />
                     </div>
                     <div>
                         <h3>Esp32</h3>
                         <p>Valor</p>
                     </div>
                 </div>
-                    
+                
+                <div>
+
                 </div>
-                <div></div>
             </div>
 
         </div>
