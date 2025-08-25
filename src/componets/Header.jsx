@@ -16,48 +16,45 @@ export function Header({ transparent = false }) {
   }, [theme]);
 
   return (
-    <div>
-      <div
-        className={`${
-          transparent ? "bg-transparent !bg-none" : "bg-light-purple dark:bg-dark-mode-purple"
-        } h-24 px-6 flex items-center justify-between`}
-      >
-        <div className="flex flex-col w-[100vw]">
-          {/* Logo e Links */}
-          <div id="texto" className="flex flex-row justify-between items-center">
-            <div className="text-dark-purple font-bold text-5xl dark:text-light-mode-purple">
-              <Link to="/">AlzhCare</Link>
-            </div>
+    <header
+      className={`${
+        transparent ? "bg-transparent !bg-none" : "bg-light-purple dark:bg-dark-mode-purple"
+      } h-20 px-6 flex flex-col`}
+    >
 
-            <div className="flex gap-8 text-dark-purple text-2xl dark:text-light-mode-purple">
-              <Link to="/produto">O produto</Link>
-              <Link to="/guia">Guia</Link>
-              <Link to="/quemSomos">Quem somos</Link>
-              <Link to="/jogo">Jogo</Link>
-            </div>
-          </div>
+      <div className="flex items-center justify-between w-full h-full">
+        
 
-          {/* Toggle de Tema */}
-          <div className="mt-4 flex justify-end">
-            <button
-              className={`relative w-14 h-8 bg-purple-700 rounded-full p-1 flex items-center transition-all ${
-                theme === "dark" ? "justify-end" : "justify-start"
-              }`}
-              onClick={() => setTheme((prev) => (prev === "dark" ? "light" : "dark"))}
-            >
-              {theme === "dark" ? (
-                <SunDimIcon size={24} className="text-yellow" />
-              ) : (
-                <MoonIcon size={24} className="text-yellow" />
-              )}
-            </button>
-          </div>
-
-          {/* Linha divisória */}
-          <div className="mt-4 mx-auto w-[97%] h-[2px] bg-dark-purple dark:bg-light-purple"></div>
+        <div className="text-dark-purple font-bold text-3xl dark:text-light-mode-purple">
+          <Link to="/">AlzhCare</Link>
         </div>
+
+
+        <nav className="flex gap-6 text-dark-purple font-semibold text-lg dark:text-light-mode-purple">
+          <Link to="/produto">O produto</Link>
+          <Link to="/guiainstrucao">Guia</Link>
+          <Link to="/quemSomos">Quem somos</Link>
+          <Link to="/jogo">Jogo</Link>
+        </nav>
+
+
+        <button
+          className={`relative w-14 h-8 bg-purple-700 rounded-full p-1 flex items-center transition-all focus:outline-none ${
+            theme === "dark" ? "justify-end" : "justify-start"
+          }`}
+          onClick={() => setTheme((prev) => (prev === "dark" ? "light" : "dark"))}
+        >
+          {theme === "dark" ? (
+            <SunDimIcon size={24} className="text-yellow" />
+          ) : (
+            <MoonIcon size={24} className="text-yellow" />
+          )}
+        </button>
       </div>
-    </div>
+
+
+      <div className=" w-full h-[1px] bg-dark-purple dark:bg-light-purple -mt-2 "></div>
+    </header>
   );
 }
 
