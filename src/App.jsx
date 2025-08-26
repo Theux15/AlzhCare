@@ -4,6 +4,7 @@ import { Produto } from './componets/Produto.jsx'
 import { QuemSomos } from './componets/QuemSomos.jsx'
 import { GuiaInstrucao } from './componets/GuiaInstrucao.jsx'
 import { Routes, Route } from 'react-router-dom'
+import { SideMenu } from './componets/SideMenu.jsx'
 
 
 export function App() {
@@ -14,6 +15,7 @@ export function App() {
         <Route path="/produto" element={<Produto />} />
         <Route path="/quemsomos" element={<QuemSomos />} />
         <Route path="/guiainstrucao" element={<GuiaInstrucao />} />
+        <Route path="/sidemenu" element={<SideMenu />} />
       </Routes>
     </div>
   )

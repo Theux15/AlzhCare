@@ -1,4 +1,5 @@
 import { Header } from "./Header.jsx"
+import { Link } from "react-router-dom"
 
 export function Produto(){
     return(
@@ -90,7 +91,7 @@ export function Produto(){
                 </div> 
 
             </section>
-
+            <Link to="/sidemenu" className="block p-4 hover:bg-[var(--color-dark-purple)] dark:hover:bg-[var(--color-light-purple)]">Menu Lateral</Link>
         </div>
     )
 }
