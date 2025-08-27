@@ -40,9 +40,9 @@ export function QuemSomos(){
             </div>
 
 
-            <div className="bg-light-purple py-12 text-white text-center"> 
-                <h2 className="text-4xl font-bold mb-4 [color:var(--color-dark-purple)]">Entre em contato:</h2>
-                <p className="text-lg mb-6 font-semibold [color:var(--color-dark-purple)]">
+            <div className="bg-light-purple dark:bg py-12 text-center dark:[color:var(--color-dark-purple)]"> 
+                <h2 className="text-4xl font-bold mb-4 [color:var(--color-dark-text)]">Entre em contato:</h2>
+                <p className="text-lg mb-6 font-semibold ">
                     Ficou com alguma dúvida? Tem alguma sugestão? 
                     Entre em contato conosco através dos nossos meios de comunicação:
                 </p>
