@@ -10,40 +10,37 @@ export function Home(){
                 <button className="text-purple-home bg-white font-bold px-6 py-3 rounded-full mt-18 ml-30">DESCRUBRA +</button>
             </div>
 
-            <div className="items-center bg-chatcolor dark:bg-dark-purple">
+            <div className="items-center min-h-[1000px] py-20 bg-chatcolorfundo dark:bg-dark-purple-home">
                 <h1 className="text-dark-purple dark:text-white font-bold text-[64px] text-center">Nosso produto</h1>
 
-                <p className="text-[24px] dark:text-white text-center ml-90 mr-90 mt-6">Nossa mochila inteligente foi desenvolvida para oferecer suporte diário a pessoas com Alzheimer, integrando tecnologia de ponta para garantir segurança e autonomia. Equipado com GPS, o dispositivo permite o monitoramento em tempo real, enquanto os lembretes programáveis auxiliam na rotina e tarefas diárias. Além disso, o sistema de reconhecimento facial ajuda o usuário a identificar pessoas próximas, reduzindo a ansiedade e confusão. Tudo isso é controlado por um aplicativo intuitivo, que também facilita o acompanhamento por parte dos cuidadores, promovendo um cuidado mais eficiente e tranquilo.</p>
+                <p className="text-[24px] bg-chatcolorfundo dark:text-white text-center ml-90 mr-90 mt-10">Nossa mochila inteligente foi desenvolvida para oferecer suporte diário a pessoas com Alzheimer, integrando tecnologia de ponta para garantir segurança e autonomia. Equipado com GPS, o dispositivo permite o monitoramento em tempo real, enquanto os lembretes programáveis auxiliam na rotina e tarefas diárias. Além disso, o sistema de reconhecimento facial ajuda o usuário a identificar pessoas próximas, reduzindo a ansiedade e confusão. Tudo isso é controlado por um aplicativo intuitivo, que também facilita o acompanhamento por parte dos cuidadores, promovendo um cuidado mais eficiente e tranquilo.</p>
 
-                <div className="overflow-x-auto whitespace-nowrap scroll-smooth py-4 px-6  py-8">
+                <div className=" mt-0 overflow-x-auto whitespace-nowrap scroll-smooth py-4 px-6  py-8">
                     <img
                          src="src/images/danca.jpeg"
-                        className="inline-block w-64 h-40 mr-4 rounded-lg w-80 h-60 lg:hover:scale-105 "
+                        className="inline-block w-130 h-130 mr-4 rounded-lg w-80 h-60 lg:hover:scale-105 "
                         alt="Imagem 1"/>
                     <img
                         src="src/images/dinga.jpeg"
-                        className="inline-block w-64 h-40 mr-4 rounded-lgw-80 h-60 hover:scale-105"
+                        className="inline-block w-130 h-130 mr-4 rounded-lgw-80 h-60 lg:hover:scale-105"
                         alt="Imagem 2"/>
                     <img
                         src="src/images/fotosabado.jpeg"
-                        className="inline-block w-64 h-40 mr-4 rounded-lgw-80 h-60 hover:scale-105"
+                        className="inline-block w-130 h-130 mr-4 rounded-lgw-80 h-60 hover:scale-105"
                         alt="Imagem 3"/>
                     <img
                         src="src/images/taylor.jpeg"
-                        className="inline-block w-64 h-40 mr-4 rounded-lgw-80 h-60 hover:scale-105"
+                        className="inline-block w-130 h-130 mr-4 rounded-lgw-80 h-60 hover:scale-105"
                         alt="Imagem 3"/>
                     <img
                          src="src/images/danca.jpeg"
-                        className="inline-block w-64 h-40 mr-4 rounded-lgw-80 h-60 hover:scale-105"
+                        className="inline-block w-130 h-130 mr-4 rounded-lgw-80 h-60 hover:scale-105"
                         alt="Imagem 1"/>
                     <img
                         src="src/images/dinga.jpeg"
-                        className="inline-block w-64 h-40 mr-4 rounded-lgw-80 h-60 hover:scale-105"
+                        className="inline-block w-130 h-130 mr-4 rounded-lgw-80 h-60 hover:scale-105"
                         alt="Imagem 2"/>
-                    <img
-                        src="src/images/fotosabado.jpeg"
-                        className="inline-block w-64 h-40 mr-4 rounded-lgw-80 h-60 hover:scale-105"
-                        alt="Imagem 3"/>
+                
                   
             
                 </div>
