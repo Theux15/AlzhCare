@@ -5,7 +5,7 @@ export function Produto(){
     return(
         
 
-        <div className="bg-[var(--color-chatcolor)] dark:bg-[var(--color-dark-purple-home)]">
+        <div className="bg-[var(--color-chatcolor)] dark:bg-[var(--color-dark-purple-home)]">   
             <Header />
             <div className="items-center justify-items-center flex flex-col gap-4 mt-20 mb-10 [color:var(--color-dark-purple)]">
                 <h1 className="text-[38px] font-bold purple lg:text-7xl dark:[color:var(--color-light-purple)] ">Produto</h1>
