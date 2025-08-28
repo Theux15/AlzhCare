@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { MoonIcon, SunDimIcon } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
-import { GameController, Book, Backpack, Users, List } from "@phosphor-icons/react";
+import { GameControllerIcon, BookIcon, BackpackIcon, UsersIcon, ListIcon } from "@phosphor-icons/react";
 
 
 export function SideMenu() {
@@ -21,7 +21,7 @@ export function SideMenu() {
             <div className="flex flex-col">
                 <div className="flex flex-row [color:var(--color-dark-purple)] dark:[color:var(--color-white)] justify-around items-center mb-3">
                     <div>
-                        <List size={32} className="text-dark-purple dark:text-white" />
+                        <ListIcon size={32} className="text-dark-purple dark:text-white" />
                     </div>
                     <div>
                         <Link className="text-4xl font-bold p-4">AlzhCare</Link>
@@ -34,20 +34,20 @@ export function SideMenu() {
 
             <ul className="flex flex-col gap-5 mt-20 flex-1">
                 <li className="pl-4 grid grid-cols-[auto_1fr] gap-5 items-center">
-                    <GameController size={30} className="text-dark-purple dark:text-white" />
+                    <GameControllerIcon size={30} className="text-dark-purple dark:text-white" />
 
                     <Link to="/jogo" className="block  text-2xl [color:var(--color-dark-purple)] font-medium dark:[color:var(--color-white)]">Jogo</Link>
                 </li>
                 <li className="pl-4 grid grid-cols-[auto_1fr] gap-5 items-center">
-                    <Book size={30} className="text-dark-purple dark:text-white" />
+                    <BookIcon size={30} className="text-dark-purple dark:text-white" />
                     <Link to="/guiainstrucao" className="block  text-2xl [color:var(--color-dark-purple)] font-medium dark:[color:var(--color-white)]">Guia</Link>
                 </li>
                 <li className="pl-4 grid grid-cols-[auto_1fr] gap-5 items-center">
-                    <Backpack size={30} className="text-dark-purple dark:text-white " />
+                    <BackpackIcon size={30} className="text-dark-purple dark:text-white " />
                     <Link to="/produto" className="block  text-2xl [color:var(--color-dark-purple)] font-medium dark:[color:var(--color-white)]">O produto</Link>
                 </li>
                 <li className="pl-4 grid grid-cols-[auto_1fr] gap-5 items-center">
-                    <Users size={30} className="text-dark-purple dark:text-white" />
+                    <UsersIcon size={30} className="text-dark-purple dark:text-white" />
                     <Link to="/quemsomos" className="block  text-2xl [color:var(--color-dark-purple)] font-medium dark:[color:var(--color-white)]   ">Quem somos</Link>
                 </li>
             </ul>
