@@ -1,4 +1,5 @@
 import { Header } from "./Header.jsx";
+import { Footer } from "./Footer.jsx";
 
 export function GuiaInstrucao() {
     return (
@@ -6,9 +7,9 @@ export function GuiaInstrucao() {
             <Header />
 
 
-            <div className="flex flex-col items-center justify-center mt-10 [color:var(--color-dark-purple)]">
+            <div className="flex flex-col items-center justify-center mt-10 [color:var(--color-dark-purple)] dark:[color:var(--color-white)]">
                 <h1 className="text-6xl font-bold mb-2">Guia de instruções</h1>
-                <p className="text-lg font-medium [color:var(--color-dark-purple)] ">
+                <p className="text-lg font-medium [color:var(--color-dark-purple)] dark:[color:var(--color-white)]">
                     Siga as instruções de utilização do AlzhCare
                 </p>
             </div>
@@ -22,12 +23,12 @@ export function GuiaInstrucao() {
 
 
             <div className="max-w-4xl mx-auto mt-12 mb-20 px-6">
-                <h2 className="text-4xl font-bold text-center mb-8 [color:var(--color-dark-purple)]">
+                <h2 className="text-4xl font-bold text-center mb-8 [color:var(--color-dark-purple)] dark:[color:var(--color-white)]">
                     Guia de Utilização <br />
                     <span className="text-2xl">Mochila Inteligente para Alzheimer</span>
                 </h2>
 
-                <div className="flex flex-col gap-6 text-lg leading-relaxed text-justify [color:var(--color-dark-purple)]">
+                <div className="flex flex-col gap-6 text-lg leading-relaxed text-justify [color:var(--color-dark-purple)] dark:[color:var(--color-white)]">
                     <div>
                         <h3 className="font-bold">1. Como conectar o aplicativo à mochila?</h3>
                         <p>
@@ -102,12 +103,8 @@ export function GuiaInstrucao() {
                 </div>
             </div>
 
-
-            <div className="bg-light-purple py-8 text-center">
-                <p className="text-lg font-semibold [color:var(--color-dark-purple)]">
-                    © 2025 AlzhCare - Todos os direitos reservados
-                </p>
-            </div>
+            <Footer />
+            
         </div>
     ); 
 }    

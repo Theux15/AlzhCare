@@ -1,5 +1,6 @@
 import Vovo from "../images/vovo.png"
 import { Header } from "./Header"
+import { Footer } from "./Footer"
 
 export function Home(){
     return(
@@ -58,6 +59,8 @@ export function Home(){
 
   <img className="w-1/2 dark:bg-dark-mode-purple object-contain" src="src/images/team.png" alt="Equipe" />
   </div>
+
+  <Footer />
 
         
         </div>

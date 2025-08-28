@@ -12,10 +12,10 @@ export function QuemSomos(){
         <div className="bg-[var(--color-chatcolor)] dark:bg-[var(--color-dark-purple-home)] min-h-screen">
             <Header />
             
-            <div className="items-center justify-items-center flex flex-col gap-4 mt-5 mb-10 [color:var(--color-dark-purple)]">
+            <div className="items-center justify-items-center flex flex-col gap-4 mt-5 mb-10 [color:var(--color-dark-purple)] dark:[color:var(--color-dark-text)]">
                 <h1 className="text-7xl font-bold purple">Quem somos</h1>
 
-                <p className="text-2xl text-center max-w-3xl font-medium">
+                <p className="text-2xl text-center max-w-3xl font-medium dark:[color:var(--color-white)]">
                     Somos um grupo de quatro estudantes que uniu forças para desenvolver este projeto como parte do nosso Trabalho de Conclusão de Curso. 
                     Ao longo do processo, cada um contribuiu com dedicação e conhecimento em diferentes áreas, trabalhando em equipe para alcançar um resultado significativo. 
                     Este projeto representa nosso esforço, aprendizado e colaboração.
@@ -30,9 +30,9 @@ export function QuemSomos(){
                         <img 
                             src={pessoa.img} 
                             alt={pessoa.nome} 
-                            className="w-32 h-32 rounded-lg object-cover shadow-md"
+                            className="w-32 h-32 rounded-lg object-cover shadow-md "
                         />
-                        <p className="mt-3 text-xl font-semibold [color:var(--color-dark-purple)]">
+                        <p className="mt-3 text-xl font-semibold [color:var(--color-dark-purple)] dark:[color:var(--color-white)]">
                             {pessoa.nome}
                         </p>
                     </div>
@@ -40,26 +40,29 @@ export function QuemSomos(){
             </div>
 
 
-            <div className="bg-light-purple dark:bg py-12 text-center dark:[color:var(--color-dark-purple)]"> 
-                <h2 className="text-4xl font-bold mb-4 [color:var(--color-dark-text)]">Entre em contato:</h2>
-                <p className="text-lg mb-6 font-semibold ">
+            <div className="bg-light-purple dark:bg-[var(--color-dark-mode-purple)] py-12 text-center dark:[color:var(--color-dark-purple)]"> 
+                <h2 className="text-4xl font-bold mb-4 [color:var(--color-dark-purple)] dark:[color:var(--color-dark-text)]">Entre em contato:</h2>
+                <p className="text-lg mb-6 font-semibold [color:var(--color-dark-purple)] dark:[color:var(--color-dark-text)]">
                     Ficou com alguma dúvida? Tem alguma sugestão? 
                     Entre em contato conosco através dos nossos meios de comunicação:
                 </p>
 
                 <div className="my-4 mx-auto w-[97%] h-[2px] bg-chatcolor "></div>
 
-                <div className="flex flex-col sm:flex-row justify-center gap-40 text-lg font-medium font-semibold [color:var(--color-purple-home)]">
+                <div className="flex flex-col sm:flex-row justify-center gap-40 text-lg font-medium font-semibold [color:var(--color-purple-home)] dark:[color:var(--color-chatcolorfundo)]">
                     <div className="flex items-center gap-1">
-                        <img src="src/images/telefone.png" alt="Telefone" className="w-6 h-6" />
+                        <img src="src/images/telefone.png" alt="Telefone" className="w-6 h-6 block dark:hidden" />
+                        <img src="src/images/telefoneescuro.png" alt="Telefone" className="w-6 h-6 hidden dark:block" />
                         <p>119487684</p>
                     </div>
                     <div className="flex items-center gap-1">
-                        <img src="src/images/rede.png" alt="Rede" className="w-6 h-6" />
+                        <img src="src/images/rede.png" alt="Rede" className="w-6 h-6 block dark:hidden" />
+                        <img src="src/images/redeescuro.png" alt="Rede" className="w-6 h-6 hidden dark:block" />
                         <p>@noses</p>
                     </div>
                     <div className="flex items-center gap-1 ">
-                        <img src="src/images/email.png" alt="Email" className="w-6 h-6" />
+                        <img src="src/images/email.png" alt="Email" className="w-6 h-6 block dark:hidden" />
+                        <img src="src/images/emailescuro.png" alt="Email" className="w-6 h-6 hidden dark:block" />
                         <p>alzhcare@gmail.com</p>
                     </div>
                 </div>
