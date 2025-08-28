@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
 import { MoonIcon, SunDimIcon } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
-import joystickIcone from '../assets/joystick.svg';
-import bookIcone from '../assets/book.svg';
-import backpackIcone from '../assets/backpack.svg';
-import groupsIcone from '../assets/groups.svg';
-import dehazeIcone from '../assets/dehaze.svg';
 import { GameController, Book, Backpack, Users, List } from "@phosphor-icons/react";
 
 
