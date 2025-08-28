@@ -6,6 +6,7 @@ import bookIcone from '../assets/book.svg';
 import backpackIcone from '../assets/backpack.svg';
 import groupsIcone from '../assets/groups.svg';
 import dehazeIcone from '../assets/dehaze.svg';
+import { GameController, Book, Backpack, Users, List } from "@phosphor-icons/react";
 
 
 export function SideMenu() {
@@ -21,37 +22,38 @@ export function SideMenu() {
     }, [theme]);
 
     return (
-        <div className="bg-[var(--color-white)] dark:bg-[var(--color-dark-purple-home)] w-[315px] min-h-0 h-screen p-4 rounded-r-3xl flex flex-col">
+        <div className="bg-[var(--color-white)] dark:bg-[var(--color-dark-mode-purple)] w-[315px] min-h-0 h-screen p-4 rounded-r-3xl flex flex-col">
             <div className="flex flex-col">
                 <div className="flex flex-row [color:var(--color-dark-purple)] dark:[color:var(--color-white)] justify-around items-center mb-3">
                     <div>
-                        <img src={dehazeIcone} alt="" />
+                        <List size={32} className="text-dark-purple dark:text-white" />
                     </div>
                     <div>
                         <Link className="text-4xl font-bold p-4">AlzhCare</Link>
                     </div>
                 </div>
                 <div>
-                    <hr className=" [color:var(--color-dark-purple)] border-b-1"/>
+                    <hr className=" [color:var(--color-dark-purple)] border-b-1 dark:[color:var(--color-white)]"/>
                 </div>
             </div>
 
             <ul className="flex flex-col gap-5 mt-20 flex-1">
                 <li className="pl-4 grid grid-cols-[auto_1fr] gap-5 items-center">
-                    <img src={joystickIcone} alt="" />
-                    <Link to="/jogo" className="block  text-2xl [color:var(--color-dark-purple)] font-medium">Jogo</Link>
+                    <GameController size={30} className="text-dark-purple dark:text-white" />
+
+                    <Link to="/jogo" className="block  text-2xl [color:var(--color-dark-purple)] font-medium dark:[color:var(--color-white)]">Jogo</Link>
                 </li>
                 <li className="pl-4 grid grid-cols-[auto_1fr] gap-5 items-center">
-                    <img src={bookIcone} alt="" />
-                    <Link to="/guiainstrucao" className="block  text-2xl [color:var(--color-dark-purple)] font-medium">Guia</Link>
+                    <Book size={30} className="text-dark-purple dark:text-white" />
+                    <Link to="/guiainstrucao" className="block  text-2xl [color:var(--color-dark-purple)] font-medium dark:[color:var(--color-white)]">Guia</Link>
                 </li>
                 <li className="pl-4 grid grid-cols-[auto_1fr] gap-5 items-center">
-                    <img src={backpackIcone} alt="" className="w-[30px] h-[30px]" />
-                    <Link to="/produto" className="block  text-2xl [color:var(--color-dark-purple)] font-medium">O produto</Link>
+                    <Backpack size={30} className="text-dark-purple dark:text-white " />
+                    <Link to="/produto" className="block  text-2xl [color:var(--color-dark-purple)] font-medium dark:[color:var(--color-white)]">O produto</Link>
                 </li>
                 <li className="pl-4 grid grid-cols-[auto_1fr] gap-5 items-center">
-                    <img src={groupsIcone} alt="" />
-                    <Link to="/quemsomos" className="block  text-2xl [color:var(--color-dark-purple)] font-medium ">Quem somos</Link>
+                    <Users size={30} className="text-dark-purple dark:text-white" />
+                    <Link to="/quemsomos" className="block  text-2xl [color:var(--color-dark-purple)] font-medium dark:[color:var(--color-white)]   ">Quem somos</Link>
                 </li>
             </ul>
 
