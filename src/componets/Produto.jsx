@@ -8,9 +8,9 @@ export function Produto(){
         <div className="bg-[var(--color-chatcolor)] dark:bg-[var(--color-dark-purple-home)]">   
             <Header />
             <div className="items-center justify-items-center flex flex-col gap-4 mt-20 mb-10 [color:var(--color-dark-purple)]">
-                <h1 className="text-[38px] font-bold purple lg:text-7xl dark:[color:var(--color-light-purple)] ">Produto</h1>
+                <h1 className="font-poppins text-[38px] font-bold purple lg:text-7xl dark:[color:var(--color-light-purple)] ">Produto</h1>
 
-                <p className="text-[18px] text-center max-w-3xl font-medium lg:text-3xl dark:[color:var(--color-light-purple)]">
+                <p className="font-inter text-[18px] text-center max-w-3xl font-medium lg:text-3xl dark:[color:var(--color-light-purple)]">
                     AlzhCare é um projeto criado para ajudar no cuidado de pessoas com Alzheimer, oferecendo apoio prático e informações úteis para familiares e cuidadores, e esse é nosso produto.
                 </p>
             </div>
@@ -94,4 +94,4 @@ export function Produto(){
             <Link to="/sidemenu" className="block p-4 hover:bg-[var(--color-dark-purple)] dark:hover:bg-[var(--color-light-purple)]">Menu Lateral</Link>
         </div>
     )
-}
+}  

@@ -15,5 +15,8 @@
     --color-yellow: #FFEA00;
     --color-dark-text: #E6D4FF;
     --color-chatcolorfundo: #FAF2FF;
+
+    --font-inter: 'Inter', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
 }
 
