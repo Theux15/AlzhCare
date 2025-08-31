@@ -1,5 +1,6 @@
 import { Header } from "./Header.jsx"
 import { Link } from "react-router-dom"
+import { ComponentesProduto } from "./ComponentesProduto.jsx"
 
 export function Produto(){
     return(
@@ -30,65 +31,12 @@ export function Produto(){
             <hr />
 
             <section className="flex flex-col p-[5%] lg:grid lg:grid-cols-2 lg:pl-[10%] lg:pr-[10%]">
-                <div className=" [color:var(--color-white)] flex flex-row rounded-2xl gap-10 mt-5 mb-5">
-                    <div className=" bg-[var(--color-dark-purple)] w-[165px] h-[125px] rounded-xl flex justify-center items-center lg:w-[260px] lg:h-[170px] dark:bg-[color:var(--color-light-purple)]">
-                        <img className="w-[150px] h-[100px] rounded-xl" src="https://i.pinimg.com/736x/f5/a5/a8/f5a5a8f283a8a2120da1e9e686e7b0ac.jpg" alt="" />
-                    </div>
-                    <div className=" flex flex-col justify-center items-center  [color:var(--color-dark-purple)]">
-                        <h3 className="text-lg font-medium lg:text-3xl dark:[color:var(--color-white)] ">Esp32</h3>
-                        <p className="text-lg font-medium text-center lg:text-3xl dark:[color:var(--color-white)]">Valor: <br /> R$ 00,00</p>
-                    </div>
-                </div>
-
-                <div className=" [color:var(--color-white)] flex flex-row rounded-2xl gap-10 mt-5 mb-5">
-                    <div className=" bg-[var(--color-dark-purple)] w-[165px] h-[125px] rounded-xl flex justify-center items-center lg:w-[260px] lg:h-[170px] dark:bg-[color:var(--color-light-purple)]">
-                        <img className="w-[150px] h-[100px] rounded-xl" src="https://i.pinimg.com/736x/f5/a5/a8/f5a5a8f283a8a2120da1e9e686e7b0ac.jpg" alt="" />
-                    </div>
-                    <div className=" flex flex-col justify-center items-center  [color:var(--color-dark-purple)]">
-                        <h3 className="text-lg font-medium lg:text-3xl dark:[color:var(--color-white)] ">Esp32</h3>
-                        <p className="text-lg font-medium text-center lg:text-3xl dark:[color:var(--color-white)]">Valor: <br /> R$ 00,00</p>
-                    </div>
-                </div>
-
-                <div className=" [color:var(--color-white)] flex flex-row rounded-2xl gap-10 mt-5 mb-5">
-                    <div className=" bg-[var(--color-dark-purple)] w-[165px] h-[125px] rounded-xl flex justify-center items-center lg:w-[260px] lg:h-[170px] dark:bg-[color:var(--color-light-purple)]">
-                        <img className="w-[150px] h-[100px] rounded-xl" src="https://i.pinimg.com/736x/f5/a5/a8/f5a5a8f283a8a2120da1e9e686e7b0ac.jpg" alt="" />
-                    </div>
-                    <div className=" flex flex-col justify-center items-center  [color:var(--color-dark-purple)]">
-                        <h3 className="text-lg font-medium lg:text-3xl dark:[color:var(--color-white)] ">Esp32</h3>
-                        <p className="text-lg font-medium text-center lg:text-3xl dark:[color:var(--color-white)]">Valor: <br /> R$ 00,00</p>
-                    </div>
-                </div>
-
-                <div className=" [color:var(--color-white)] flex flex-row rounded-2xl gap-10 mt-5 mb-5">
-                    <div className=" bg-[var(--color-dark-purple)] w-[165px] h-[125px] rounded-xl flex justify-center items-center lg:w-[260px] lg:h-[170px] dark:bg-[color:var(--color-light-purple)]">
-                        <img className="w-[150px] h-[100px] rounded-xl" src="https://i.pinimg.com/736x/f5/a5/a8/f5a5a8f283a8a2120da1e9e686e7b0ac.jpg" alt="" />
-                    </div>
-                    <div className=" flex flex-col justify-center items-center  [color:var(--color-dark-purple)]">
-                        <h3 className="text-lg font-medium lg:text-3xl dark:[color:var(--color-white)] ">Esp32</h3>
-                        <p className="text-lg font-medium text-center lg:text-3xl dark:[color:var(--color-white)]">Valor: <br /> R$ 00,00</p>
-                    </div>
-                </div>
-
-                <div className=" [color:var(--color-white)] flex flex-row rounded-2xl gap-10 mt-5 mb-5">
-                    <div className=" bg-[var(--color-dark-purple)] w-[165px] h-[125px] rounded-xl flex justify-center items-center lg:w-[260px] lg:h-[170px] dark:bg-[color:var(--color-light-purple)]">
-                        <img className="w-[150px] h-[100px] rounded-xl" src="https://i.pinimg.com/736x/f5/a5/a8/f5a5a8f283a8a2120da1e9e686e7b0ac.jpg" alt="" />
-                    </div>
-                    <div className=" flex flex-col justify-center items-center  [color:var(--color-dark-purple)]">
-                        <h3 className="text-lg font-medium lg:text-3xl dark:[color:var(--color-white)] ">Esp32</h3>
-                        <p className="text-lg font-medium text-center lg:text-3xl dark:[color:var(--color-white)]">Valor: <br /> R$ 00,00</p>
-                    </div>
-                </div>
-
-                <div className=" [color:var(--color-white)] flex flex-row rounded-2xl gap-10 mt-5 mb-5">
-                    <div className=" bg-[var(--color-dark-purple)] w-[165px] h-[125px] rounded-xl flex justify-center items-center lg:w-[260px] lg:h-[170px] dark:bg-[color:var(--color-light-purple)]">
-                        <img className="w-[150px] h-[100px] rounded-xl" src="https://i.pinimg.com/736x/f5/a5/a8/f5a5a8f283a8a2120da1e9e686e7b0ac.jpg" alt="" />
-                    </div>
-                    <div className=" flex flex-col justify-center items-center  [color:var(--color-dark-purple)]">
-                        <h3 className="text-lg font-medium lg:text-3xl dark:[color:var(--color-white)] ">Esp32</h3>
-                        <p className="text-lg font-medium text-center lg:text-3xl dark:[color:var(--color-white)]">Valor: <br /> R$ 00,00</p>
-                    </div>
-                </div> 
+                
+                <ComponentesProduto
+                    imgSrc="https://i.pinimg.com/736x/f5/a5/a8/f5a5a8f283a8a2120da1e9e686e7b0ac.jpg"
+                    title="Esp32"
+                    value="R$ 00,00"
+                />
 
             </section>
             <Link to="/sidemenu" className="block p-4 hover:bg-[var(--color-dark-purple)] dark:hover:bg-[var(--color-light-purple)]">Menu Lateral</Link>
