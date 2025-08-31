@@ -1,6 +1,17 @@
 import { Header } from "./Header.jsx"
 import { Link } from "react-router-dom"
 import { ComponentesProduto } from "./ComponentesProduto.jsx"
+import esp32Img from '../assets/Esp32.webp';
+import AcelerometroGiroscopio from '../assets/AcelerometroGiroscopio.png';
+import AutoFalante from '../assets/AutoFalante.png';
+import DfPlayerMini from '../assets/DfPlayerMini.png';
+import Jumpers from '../assets/Jumpers.png';
+import ModuloGPS from '../assets/ModuloGps.png';
+import ModuloGSM from '../assets/ModuloGSM.png';
+import Protoboard from '../assets/ProtoBoard.png';
+import RealTimeClock from '../assets/RealTimeClock.png';
+import SensorCardiaco from '../assets/SensorCardiaco.png';
+
 
 export function Produto(){
     return(
@@ -8,7 +19,7 @@ export function Produto(){
 
         <div className="bg-[var(--color-chatcolor)] dark:bg-[var(--color-dark-purple-home)]">   
             <Header />
-            <div className="items-center justify-items-center flex flex-col gap-4 mt-20 mb-10 [color:var(--color-dark-purple)]">
+            <div className="items-center justify-items-center flex flex-col gap-4 mt-20 mb-15 [color:var(--color-dark-purple)]">
                 <h1 className="font-poppins text-[38px] font-bold purple lg:text-7xl dark:[color:var(--color-light-purple)] ">Produto</h1>
 
                 <p className="font-inter text-[18px] text-center max-w-3xl font-medium lg:text-3xl dark:[color:var(--color-light-purple)]">
@@ -16,7 +27,7 @@ export function Produto(){
                 </p>
             </div>
 
-            <hr />
+
 
             <div className="flex flex-row items-center gap-10 mb-5 mt-5 justify-center lg:grid lg:grid-cols-2 lg:pl-[10%] lg:pr-[10%]">
                 <div className="">
@@ -28,13 +39,67 @@ export function Produto(){
                 </div>
             </div>
 
-            <hr />
 
-            <section className="flex flex-col p-[5%] lg:grid lg:grid-cols-2 lg:pl-[10%] lg:pr-[10%]">
+
+            <section className="flex flex-col p-[5%] lg:grid lg:grid-cols-2 lg:pl-[5%] lg:pr-[5%]">
                 
                 <ComponentesProduto
-                    imgSrc="https://i.pinimg.com/736x/f5/a5/a8/f5a5a8f283a8a2120da1e9e686e7b0ac.jpg"
+                    imgSrc={esp32Img}
                     title="Esp32"
+                    value="R$ 00,00"
+                />
+
+                <ComponentesProduto
+                    imgSrc={AcelerometroGiroscopio}
+                    title="Acelerômetro/Giroscópio"
+                    value="R$ 00,00"
+                />
+
+                <ComponentesProduto
+                    imgSrc={AutoFalante}
+                    title="Auto Falante"
+                    value="R$ 00,00"
+                />
+
+                <ComponentesProduto
+                    imgSrc={DfPlayerMini}
+                    title="DFPlayer Mini"
+                    value="R$ 00,00"
+                />
+
+                <ComponentesProduto
+                    imgSrc={Jumpers}
+                    title="Jumpers"
+                    value="R$ 00,00"
+                />
+
+                <ComponentesProduto
+                    imgSrc={ModuloGPS}
+                    title="Módulo GPS"
+                    value="R$ 00,00"
+                />
+
+                <ComponentesProduto
+                    imgSrc={ModuloGSM}
+                    title="Módulo GSM"
+                    value="R$ 00,00"
+                />
+
+                <ComponentesProduto
+                    imgSrc={Protoboard}
+                    title="Protoboard"
+                    value="R$ 00,00"
+                />
+
+                <ComponentesProduto
+                    imgSrc={RealTimeClock}
+                    title="Real Time Clock"
+                    value="R$ 00,00"
+                />
+
+                <ComponentesProduto
+                    imgSrc={SensorCardiaco}
+                    title="Sensor Cardíaco"
                     value="R$ 00,00"
                 />
 
