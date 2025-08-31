@@ -23,12 +23,12 @@ export function Header({ transparent = false }) {
     >
       <div className="flex items-center justify-between w-full h-full">
 
-        <div className="text-dark-purple font-bold text-4xl dark:text-light-mode-purple">
+        <div className="text-dark-purple font-poppins  font-semibold text-4xl dark:text-light-mode-purple">
           <Link to="/">AlzhCare</Link>
         </div>
 
         <div className="flex items-center gap-5">
-          <nav className="flex gap-8 text-dark-purple font-semibold text-2xl dark:text-light-mode-purple">
+          <nav className="flex gap-8 text-dark-purple text-xl font-poppins font-medium dark:text-light-mode-purple">
             <Link to="/produto">O produto</Link>
             <Link to="/guiainstrucao">Guia</Link>
             <Link to="/quemSomos">Quem somos</Link>
