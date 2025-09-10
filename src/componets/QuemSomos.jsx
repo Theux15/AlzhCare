@@ -2,10 +2,10 @@ import { Header } from "./Header.jsx"
 
 export function QuemSomos() {
   const integrantes = [
-    { nome: "Matheus", img: "https://via.placeholder.com/150" },
-    { nome: "Giovanna", img: "src/images/fotogi.jpg" },
-    { nome: "Maria Luiza", img: "src/images/fotomalu.jpeg" },
-    { nome: "Pedro Duarte", img: "src/images/fotoduarte.jpeg" },
+    { nome: "Matheus", img: "/fotomatheus.jpg" },
+    { nome: "Giovanna", img: "/fotogi.JPG" },
+    { nome: "Maria Luiza", img: "/fotomalu.jpeg" },
+    { nome: "Pedro Duarte", img: "/fotoduarte.jpeg" },
   ]
 
   return (
@@ -52,18 +52,18 @@ export function QuemSomos() {
 
         <div className="flex flex-col gap-4 md:flex-row md:justify-center md:gap-40 text-sm md:text-lg font-medium [color:var(--color-purple-home)] dark:[color:var(--color-chatcolorfundo)]">
           <div className="flex items-center gap-2 justify-center">
-            <img src="src/images/telefone.png" alt="Telefone" className="w-5 h-5 block dark:hidden" />
-            <img src="src/images/telefoneescuro.png" alt="Telefone" className="w-5 h-5 hidden dark:block" />
+            <img src="/telefone.png" alt="Telefone" className="w-5 h-5 block dark:hidden" />
+            <img src="/telefoneescuro.png" alt="Telefone" className="w-5 h-5 hidden dark:block" />
             <p>119487684</p>
           </div>
           <div className="flex items-center gap-2 justify-center">
-            <img src="src/images/rede.png" alt="Rede" className="w-5 h-5 block dark:hidden" />
-            <img src="src/images/redeescuro.png" alt="Rede" className="w-5 h-5 hidden dark:block" />
+            <img src="/rede.png" alt="Rede" className="w-5 h-5 block dark:hidden" />
+            <img src="/redeescuro.png" alt="Rede" className="w-5 h-5 hidden dark:block" />
             <p>@noses</p>
           </div>
           <div className="flex items-center gap-2 justify-center">
-            <img src="src/images/email.png" alt="Email" className="w-5 h-5 block dark:hidden" />
-            <img src="src/images/emailescuro.png" alt="Email" className="w-5 h-5 hidden dark:block" />
+            <img src="/email.png" alt="Email" className="w-5 h-5 block dark:hidden" />
+            <img src="/emailescuro.png" alt="Email" className="w-5 h-5 hidden dark:block" />
             <p>alzhcare@gmail.com</p>
           </div>
         </div>
