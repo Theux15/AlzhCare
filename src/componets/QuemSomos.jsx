@@ -13,7 +13,7 @@ export function QuemSomos() {
       <Header />
 
       <div className="items-center justify-items-center flex flex-col gap-4 mt-6 mb-8 px-4 [color:var(--color-dark-purple)] dark:[color:var(--color-white)]">
-        <h1 className="text-2xl font-bold md:text-7xl">Quem somos</h1>
+        <h1 className="text-2xl font-bold md:text-7xl dark:[color:var(--color-dark-text)]">Quem somos</h1>
 
         <p className="text-sm leading-relaxed text-justify max-w-sm md:max-w-3xl md:text-2xl">
           Somos um grupo de quatro estudantes que uniu forças para desenvolver este
@@ -40,17 +40,17 @@ export function QuemSomos() {
       </div>
 
       <div className="bg-light-purple dark:bg-[var(--color-dark-mode-purple)] py-8 px-4 text-center dark:[color:var(--color-dark-purple)]">
-        <h2 className="text-lg font-bold mb-3 md:text-4xl [color:var(--color-dark-purple)] dark:[color:var(--color-white)]">
+        <h2 className="text-lg font-bold mb-3 md:text-4xl [color:var(--color-dark-purple)] dark:[color:var(--color-dark-text)]">
           Entre em contato:
         </h2>
-        <p className="text-sm mb-4 font-medium md:text-lg [color:var(--color-dark-purple)] dark:[color:var(--color-white)]">
+        <p className="text-sm mb-4 font-medium md:text-lg [color:var(--color-dark-purple)] dark:[color:var(--color-dark-text)]">
           Ficou com alguma dúvida? Tem alguma sugestão? <br />
           Entre em contato conosco através dos nossos meios de comunicação:
         </p>
 
         <div className="my-4 mx-auto w-[95%] h-[1px] bg-chatcolor"></div>
 
-        <div className="flex flex-col gap-4 md:flex-row md:justify-center md:gap-40 text-sm md:text-lg font-medium [color:var(--color-purple-home)] dark:[color:var(--color-chatcolorfundo)]">
+        <div className="flex flex-col gap-4 md:flex-row md:justify-center md:gap-40 text-sm md:text-lg font-medium [color:var(--color-purple-home)]  dark:[color:var(--color-dark-text)]">
           <div className="flex items-center gap-2 justify-center">
             <img src="/telefone.png" alt="Telefone" className="w-5 h-5 block dark:hidden" />
             <img src="/telefoneescuro.png" alt="Telefone" className="w-5 h-5 hidden dark:block" />
