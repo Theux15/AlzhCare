@@ -1,4 +1,4 @@
-import { Header } from "./Header.jsx"
+import { ResponsiveHeader} from "./ResponsiveHeader.jsx"
 import { Footer } from "./Footer"
 import Galaxia from "../assets/Galaxia.png"
 import Play from "../assets/Play.png"
@@ -12,7 +12,7 @@ export function Jogo() {
                 style={{ backgroundImage: `url(${Galaxia})` }}
             >
 
-                <Header />
+                <ResponsiveHeader />
 
 
                 <div className="flex flex-col items-center justify-center flex-1 text-center px-4">
