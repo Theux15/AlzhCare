@@ -1,11 +1,11 @@
-import { Header } from "./Header"
+import { ResponsiveHeader } from "./ResponsiveHeader"
 import { Footer } from "./Footer"
 
 export function Home(){
     return(
         <div>
             <div className="h-screen w-full bg-cover bg-center" style={{ backgroundImage: `url(/vovo.png)` }}>
-                <Header transparent />
+                <ResponsiveHeader transparent />
                 <div className="flex flex-col items-center text-center lg:items-start lg:text-left pt-24 lg:pt-[200px] px-6">
                     <h1 className="text-white font-bold text-4xl max-w-md lg:max-w-2xl lg:text-7xl lg:leading-[80px]">
                         Cuidar de quem precisa, com amor e inovação
