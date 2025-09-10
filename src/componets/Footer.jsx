@@ -11,10 +11,10 @@ export function Footer() {
         </div>
 
         <nav className="flex flex-col gap-3 text-base [color:var(--color-white)] font-medium dark:[color:var(--color-white)] md:flex-row md:gap-8 md:text-lg">
-          <Link to="/contato">Contato e Suporte</Link>
+          <Link to="/quemSomos">Contato e Suporte</Link>
           <Link to="/quemSomos">Quem somos</Link>
           <Link to="/produto">Comprar</Link>
-          <Link to="/guia">Guia</Link>
+          <Link to="/guiainstrucao">Guia</Link>
           <Link to="/referencias">Referências</Link>
         </nav>
       </div>
