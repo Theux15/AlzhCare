@@ -1,10 +1,11 @@
 import { Header } from "./Header.jsx";
 import { Footer } from "./Footer.jsx";
+import { ResponsiveHeader } from "./ResponsiveHeader.jsx";
 
 export function GuiaInstrucao() {
   return (
     <div className="bg-[var(--color-chatcolor)] dark:bg-[var(--color-dark-purple-home)] min-h-screen">
-      <Header />
+      <ResponsiveHeader/>
 
       <div className="flex flex-col items-center justify-center mt-10 px-4 text-center [color:var(--color-dark-purple)] dark:[color:var(--color-white)]">
         <h1 className="font-bold mb-2 text-2xl md:text-6xl">
