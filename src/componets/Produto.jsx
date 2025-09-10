@@ -8,7 +8,7 @@ import DfPlayerMini from '../assets/DfPlayerMini.png';
 import Jumpers from '../assets/Jumpers.png';
 import ModuloGPS from '../assets/ModuloGPS.png';
 import ModuloGSM from '../assets/ModuloGSM.png';
-import Protoboard from '../assets/ProtoBoard.png';
+import Protoboard from '../assets/Protoboard.png';
 import RealTimeClock from '../assets/RealTimeClock.png';
 import SensorCardiaco from '../assets/SensorCardiaco.png';
 
