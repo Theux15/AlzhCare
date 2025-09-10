@@ -6,7 +6,7 @@ import AcelerometroGiroscopio from '../assets/AcelerometroGiroscopio.png';
 import AutoFalante from '../assets/AutoFalante.png';
 import DfPlayerMini from '../assets/DfPlayerMini.png';
 import Jumpers from '../assets/Jumpers.png';
-import ModuloGPS from '../assets/ModuloGps.png';
+import ModuloGPS from '../assets/ModuloGPS.png';
 import ModuloGSM from '../assets/ModuloGSM.png';
 import Protoboard from '../assets/ProtoBoard.png';
 import RealTimeClock from '../assets/RealTimeClock.png';
