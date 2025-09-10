@@ -1,4 +1,4 @@
-import { Header } from "./Header.jsx"
+import { ResponsiveHeader } from "./ResponsiveHeader.jsx"
 
 export function QuemSomos() {
   const integrantes = [
@@ -10,7 +10,7 @@ export function QuemSomos() {
 
   return (
     <div className="bg-[var(--color-chatcolor)] dark:bg-[var(--color-dark-purple-home)] min-h-screen">
-      <Header />
+      <ResponsiveHeader />
 
       <div className="items-center justify-items-center flex flex-col gap-4 mt-6 mb-8 px-4 [color:var(--color-dark-purple)] dark:[color:var(--color-white)]">
         <h1 className="text-2xl font-bold md:text-7xl dark:[color:var(--color-dark-text)]">Quem somos</h1>
