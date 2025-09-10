@@ -12,7 +12,7 @@ export function QuemSomos() {
     <div className="bg-[var(--color-chatcolor)] dark:bg-[var(--color-dark-purple-home)] min-h-screen">
       <Header />
 
-      <div className="flex flex-col items-center text-center gap-4 mt-6 mb-8 px-4 [color:var(--color-dark-purple)] dark:[color:var(--color-white)]">
+      <div className="items-center justify-items-center flex flex-col gap-4 mt-6 mb-8 px-4 [color:var(--color-dark-purple)] dark:[color:var(--color-white)]">
         <h1 className="text-2xl font-bold md:text-7xl">Quem somos</h1>
 
         <p className="text-sm leading-relaxed text-justify max-w-sm md:max-w-3xl md:text-2xl">
