@@ -1,10 +1,11 @@
-import { Header } from "./Header.jsx"
+
 import { Footer } from "./Footer"
+import { ResponsiveHeader } from "./ResponsiveHeader"
 
 export function Referencias() {
    return (
         <div className="bg-[var(--color-chatcolor)] dark:bg-[var(--color-dark-purple-home)]">   
-            <Header />
+            <ResponsiveHeader />
 
             <div className="flex flex-col items-center mt-20 mb-16 [color:var(--color-dark-purple)] px-4">
                 <h1 className="font-poppins text-[2.5rem] lg:text-[85px] font-bold purple dark:[color:var(--color-dark-text)] mb-10 text-center">
