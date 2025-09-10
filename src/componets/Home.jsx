@@ -1,7 +1,28 @@
 import { ResponsiveHeader } from "./ResponsiveHeader"
 import { Footer } from "./Footer"
+import { useState } from "react"
+import { CaretLeftIcon, CaretRightIcon } from "@phosphor-icons/react"
 
 export function Home(){
+    const images = [
+        "/danca.jpeg",
+        "/dinga.jpeg", 
+        "/fotosabado.jpeg",
+        "/taylor.jpeg"
+    ];
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const nextSlide = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+
+    const prevSlide = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    };
+
+    const getPrevIndex = () => (currentIndex - 1 + images.length) % images.length;
+    const getNextIndex = () => (currentIndex + 1) % images.length;
     return(
         <div>
             <div className="h-screen w-full bg-cover bg-center" style={{ backgroundImage: `url(/vovo.png)` }}>
@@ -30,37 +51,55 @@ export function Home(){
                     Nossa mochila inteligente foi desenvolvida para oferecer suporte diário a pessoas com Alzheimer, integrando tecnologia de ponta para garantir segurança e autonomia. Equipado com GPS, o dispositivo permite o monitoramento em tempo real, enquanto os lembretes programáveis auxiliam na rotina e tarefas diárias. Além disso, o sistema de reconhecimento facial ajuda o usuário a identificar pessoas próximas, reduzindo a ansiedade e confusão. Tudo isso é controlado por um aplicativo intuitivo, que também facilita o acompanhamento por parte dos cuidadores, promovendo um cuidado mais eficiente e tranquilo.
                 </p>
 
-                <div className="mt-10 overflow-x-auto whitespace-nowrap scroll-smooth py-4">
+                <div className="mt-10 flex items-center justify-center gap-8 lg:gap-12 px-4 relative overflow-hidden">
+
+                    <button 
+                        onClick={prevSlide}
+                        className="absolute left-2 lg:left-8 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-md transition-all"
+                    >
+                        <CaretLeftIcon size={24} className="text-dark-purple" />
+                    </button>
+
                     <img
-                        src="/danca.jpeg"
-                        className="inline-block w-60 h-48 lg:w-80 lg:h-60 mr-4 rounded-lg lg:hover:scale-105"
-                        alt="Imagem 1"
+                        src={images[getPrevIndex()]}
+                        className="w-40 h-30 lg:w-80 lg:h-60 rounded-lg opacity-70 hover:opacity-100 transition-opacity cursor-pointer"
+                        alt="Imagem anterior"
+                        onClick={prevSlide}
                     />
+                    
                     <img
-                        src="/dinga.jpeg"
-                        className="inline-block w-60 h-48 lg:w-80 lg:h-60 mr-4 rounded-lg lg:hover:scale-105"
-                        alt="Imagem 2"
+                        src={images[currentIndex]}
+                        className="w-60 h-45 lg:w-[647px] lg:h-[485px] rounded-lg shadow-lg transform scale-105 hover:scale-110 transition-transform cursor-pointer z-10 relative"
+                        alt="Imagem atual"
                     />
+                    
                     <img
-                        src="/fotosabado.jpeg"
-                        className="inline-block w-60 h-48 lg:w-80 lg:h-60 mr-4 rounded-lg lg:hover:scale-105"
-                        alt="Imagem 3"
+                        src={images[getNextIndex()]}
+                        className="w-40 h-30 lg:w-80 lg:h-60 rounded-lg opacity-70 hover:opacity-100 transition-opacity cursor-pointer"
+                        alt="Imagem próxima"
+                        onClick={nextSlide}
                     />
-                    <img
-                        src="/taylor.jpeg"
-                        className="inline-block w-60 h-48 lg:w-80 lg:h-60 mr-4 rounded-lg lg:hover:scale-105"
-                        alt="Imagem 4"
-                    />
-                    <img
-                        src="/danca.jpeg"
-                        className="inline-block w-60 h-48 lg:w-80 lg:h-60 mr-4 rounded-lg lg:hover:scale-105"
-                        alt="Imagem 5"
-                    />
-                    <img
-                        src="/dinga.jpeg"
-                        className="inline-block w-60 h-48 lg:w-80 lg:h-60 mr-4 rounded-lg lg:hover:scale-105"
-                        alt="Imagem 6"
-                    />
+
+                    <button 
+                        onClick={nextSlide}
+                        className="absolute right-2 lg:right-8 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-md transition-all"
+                    >
+                        <CaretRightIcon size={24} className="text-dark-purple" />
+                    </button>
+                </div>
+
+                <div className="flex justify-center mt-6 gap-2">
+                    {images.map((_, index) => (
+                        <button
+                            key={index}
+                            onClick={() => setCurrentIndex(index)}
+                            className={`w-3 h-3 rounded-full transition-all ${
+                                index === currentIndex 
+                                    ? 'bg-dark-purple dark:bg-white' 
+                                    : 'bg-gray-300 dark:bg-gray-600'
+                            }`}
+                        />
+                    ))}
                 </div>
             </div>
 
