@@ -15,6 +15,7 @@ export function Footer() {
           <Link to="/quemSomos">Quem somos</Link>
           <Link to="/produto">Comprar</Link>
           <Link to="/guia">Guia</Link>
+          <Link to="/referencias">Referências</Link>
         </nav>
       </div>
     </footer>
