@@ -36,16 +36,19 @@ export function Header({ transparent = false }) {
           </nav>
 
           <button
-            className={`relative w-14 h-8 bg-purple-700 rounded-full p-1 flex items-center transition-all focus:outline-none cursor-pointer ${
-              theme === "dark" ? "justify-end" : "justify-start"
-            }`}
+            className="relative w-18 h-8 bg-dark-purple dark:bg-dark-purple-home rounded-full p-1 lg:ml-5 flex items-center justify-between transition-all focus:outline-none cursor-pointer"
             onClick={() => setTheme((prev) => (prev === "dark" ? "light" : "dark"))}
           >
-            {theme === "dark" ? (
-              <SunDimIcon size={24} className="text-yellow" />
-            ) : (
-              <MoonIcon size={24} className="text-yellow" />
-            )}
+            <div className={`w-6 h-6 rounded-full flex items-center justify-center transition-all ${
+              theme === "dark" ? "bg-light-purple" : "bg-transparent"
+            }`}>
+              <MoonIcon size={16} weight="fill" className="text-yellow" />
+            </div>
+            <div className={`w-6 h-6 rounded-full flex items-center justify-center transition-all ${
+              theme === "light" ? "bg-purple-home" : "bg-transparent"
+            }`}>
+              <SunDimIcon size={16} weight="bold" className="text-yellow" />
+            </div>
           </button>
         </div>
       </div>
