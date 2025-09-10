@@ -52,11 +52,11 @@ export function Jogo() {
                         A História
                     </h1>
 
-                    <p className="font-inter text-base lg:text-xl text-center max-w-md lg:max-w-3xl font-regular dark:text-white mx-auto">
+                    <p className="font-inter text-base lg:text-xl text-center max-w-md lg:max-w-[1000px] font-regular dark:text-white mx-auto">
                         MindJourney se passa dentro da mente fragmentada de uma pessoa com Alzheimer. Quatro personagens exploram esse mundo perdido, resolvendo puzzles para recuperar fragmentos de memória espalhados. Cada lembrança resgatada ajuda a montar o quebra-cabeça da identidade perdida, enquanto enfrentam desafios que refletem as dificuldades da doença. Com visual pixel art 2D, o jogo convida o jogador a uma jornada emocional pela mente humana em busca da memória e da esperança.
                     </p>
 
-                    <div className="w-40 h-32 
+                    <div className="w-[330px] h-[215px]
                         lg:w-[31.5rem] lg:h-[20.5rem] 
                         mx-auto mt-4 lg:mt-8 
                         bg-[var(--color-light-purple)] rounded-2xl 
