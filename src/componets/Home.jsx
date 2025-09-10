@@ -6,13 +6,16 @@ export function Home(){
         <div>
             <div className="h-screen w-full bg-cover bg-center" style={{ backgroundImage: `url(/vovo.png)` }}>
                 <ResponsiveHeader transparent />
-                <div className="flex flex-col items-center text-center lg:items-start lg:text-left pt-24 lg:pt-[200px] px-6">
-                    <h1 className="text-white font-bold text-4xl max-w-md lg:max-w-2xl lg:text-7xl lg:leading-[80px]">
-                        Cuidar de quem precisa, com amor e inovação
-                    </h1>
-                    <button className="text-purple-home bg-white font-bold px-6 py-3 rounded-full mt-8 lg:mt-12 lg:ml-0">
-                        DESCUBRA +
-                    </button>
+                
+                <div className="flex flex-col items-center text-center lg:items-start lg:text-left pt-24 lg:pt-[200px] px-6 lg:pl-10">
+                    <div className="flex flex-col items-center lg:items-start">
+                        <h1 className="text-white font-bold text-4xl max-w-md lg:max-w-2xl lg:text-7xl lg:leading-[80px] lg:text-left">
+                            Cuidar de quem precisa, com amor e inovação
+                        </h1>
+                        <button className="text-purple-home bg-white font-bold px-6 py-3 rounded-full mt-125 lg:mt-12 lg:mr-12 lg:self-center">
+                            DESCUBRA +
+                        </button>
+                    </div>
                 </div>
             </div>
 
