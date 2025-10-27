@@ -5,10 +5,10 @@ import { CaretLeftIcon, CaretRightIcon } from "@phosphor-icons/react"
 
 export function Home(){
     const images = [
-        "/danca.jpeg",
+        {/* "/danca.jpeg",
         "/dinga.jpeg", 
         "/fotosabado.jpeg",
-        "/taylor.jpeg"
+        "/taylor.jpeg" */}
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
