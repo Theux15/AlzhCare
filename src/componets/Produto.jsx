@@ -33,7 +33,7 @@ export function Produto(){
 
             <div className="flex flex-row items-center gap-10 mb-5 mt-5 justify-center lg:grid lg:grid-cols-2 lg: mx-[5%]">
                 <div className="">
-                    <img className="rounded-xl w-[165px] h-[125px] lg:w-[550px] lg:h-[400px]" src="https://i.pinimg.com/736x/a6/ea/30/a6ea304f8b3b4fe1f89e58508bbe07b1.jpg" alt="" />
+                    <img className="rounded-xl w-[165px] h-[125px] lg:w-[550px] lg:h-[400px]" src="https://http2.mlstatic.com/D_NQ_NP_744664-MLB74777346433_022024-O.webp" alt="" />
                 </div>
                 <div className=" [color:var(--color-dark-purple)] w-full max-w-[40%] flex flex-col justify-center items-center">
                     <p className="text-lg font-semibold lg:text-3xl text-center dark:[color:var(--color-white)]">AlzhCare</p>
