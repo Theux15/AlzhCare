@@ -51,6 +51,7 @@ export function Home(){
                     Nossa mochila inteligente foi desenvolvida para oferecer suporte diário a pessoas com Alzheimer, integrando tecnologia de ponta para garantir segurança e autonomia. Equipado com GPS, o dispositivo permite o monitoramento em tempo real, enquanto os lembretes programáveis auxiliam na rotina e tarefas diárias. Além disso, o sistema de reconhecimento facial ajuda o usuário a identificar pessoas próximas, reduzindo a ansiedade e confusão. Tudo isso é controlado por um aplicativo intuitivo, que também facilita o acompanhamento por parte dos cuidadores, promovendo um cuidado mais eficiente e tranquilo.
                 </p>
 
+                {/* 
                 <div className="mt-10 flex items-center justify-center gap-8 lg:gap-12 px-4 relative overflow-hidden">
 
                     <button 
@@ -102,6 +103,7 @@ export function Home(){
                     ))}
                 </div>
             </div>
+            */}
 
             <div className="bg-light-purple dark:bg-dark-mode-purple flex flex-col lg:flex-row items-center justify-center p-8 gap-8">
                 <div className="max-w-lg text-center lg:text-left">
