@@ -2,27 +2,26 @@ import { ResponsiveHeader } from "./ResponsiveHeader"
 import { Footer } from "./Footer"
 import { useState } from "react"
 import { CaretLeftIcon, CaretRightIcon } from "@phosphor-icons/react"
+import AlzhcarePrototipoImg from '../assets/AlzhcarePrototipo.png'
 
 export function Home(){
-    const images = [
-        {/* "/danca.jpeg",
-        "/dinga.jpeg", 
-        "/fotosabado.jpeg",
-        "/taylor.jpeg" */}
+    const media = [
+        { type: 'video', src: 'https://www.youtube.com/embed/uzEILGHlh4w' },
+        { type: 'image', src: AlzhcarePrototipoImg },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % media.length);
     };
 
     const prevSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + media.length) % media.length);
     };
 
-    const getPrevIndex = () => (currentIndex - 1 + images.length) % images.length;
-    const getNextIndex = () => (currentIndex + 1) % images.length;
+    const getPrevIndex = () => (currentIndex - 1 + media.length) % media.length;
+    const getNextIndex = () => (currentIndex + 1) % media.length;
     return(
         <div>
             <div className="h-screen w-full bg-cover bg-center" style={{ backgroundImage: `url(/vovo.png)` }}>
@@ -61,25 +60,43 @@ export function Home(){
                         <CaretLeftIcon size={24} className="text-dark-purple" />
                     </button>
 
-                    <img
-                        src={images[getPrevIndex()]}
-                        className="w-40 h-30 lg:w-80 lg:h-60 rounded-lg opacity-70 hover:opacity-100 transition-opacity cursor-pointer"
-                        alt="Imagem anterior"
-                        onClick={prevSlide}
-                    />
+                    {media[getPrevIndex()].type === 'image' ? (
+                        <img
+                            src={media[getPrevIndex()].src}
+                            className="w-40 h-30 lg:w-80 lg:h-60 rounded-lg opacity-70 hover:opacity-100 transition-opacity cursor-pointer"
+                            alt="Imagem anterior"
+                            onClick={prevSlide}
+                        />
+                    ) : (
+                        <div className="w-40 h-30 lg:w-80 lg:h-60 rounded-lg opacity-70 bg-gray-300 dark:bg-gray-700" />
+                    )}
                     
-                    <img
-                        src={images[currentIndex]}
-                        className="w-60 h-45 lg:w-[647px] lg:h-[485px] rounded-lg shadow-lg transform scale-105 hover:scale-110 transition-transform cursor-pointer z-10 relative"
-                        alt="Imagem atual"
-                    />
+                    {media[currentIndex].type === 'image' ? (
+                        <img
+                            src={media[currentIndex].src}
+                            className="w-60 h-45 lg:w-[647px] lg:h-[485px] rounded-lg shadow-lg transform scale-105 hover:scale-110 transition-transform cursor-pointer z-10 relative"
+                            alt="Imagem atual"
+                        />
+                    ) : (
+                        <iframe
+                            src={media[currentIndex].src}
+                            className="w-60 h-45 lg:w-[647px] lg:h-[485px] rounded-lg shadow-lg transform scale-105 z-10 relative"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            title="Vídeo YouTube"
+                        />
+                    )}
                     
-                    <img
-                        src={images[getNextIndex()]}
-                        className="w-40 h-30 lg:w-80 lg:h-60 rounded-lg opacity-70 hover:opacity-100 transition-opacity cursor-pointer"
-                        alt="Imagem próxima"
-                        onClick={nextSlide}
-                    />
+                    {media[getNextIndex()].type === 'image' ? (
+                        <img
+                            src={media[getNextIndex()].src}
+                            className="w-40 h-30 lg:w-80 lg:h-60 rounded-lg opacity-70 hover:opacity-100 transition-opacity cursor-pointer"
+                            alt="Imagem próxima"
+                            onClick={nextSlide}
+                        />
+                    ) : (
+                        <div className="w-40 h-30 lg:w-80 lg:h-60 rounded-lg opacity-70 bg-gray-300 dark:bg-gray-700" />
+                    )}
 
                     <button 
                         onClick={nextSlide}
@@ -90,7 +107,7 @@ export function Home(){
                 </div>
 
                 <div className="flex justify-center mt-6 gap-2">
-                    {images.map((_, index) => (
+                    {media.map((_, index) => (
                         <button
                             key={index}
                             onClick={() => setCurrentIndex(index)}
