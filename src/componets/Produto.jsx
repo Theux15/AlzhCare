@@ -3,14 +3,12 @@ import { Link } from "react-router-dom"
 import { ComponentesProduto } from "./ComponentesProduto.jsx"
 import esp32Img from '../assets/Esp32.webp';
 import AcelerometroGiroscopio from '../assets/AcelerometroGiroscopio.png';
-import AutoFalante from '../assets/AutoFalante.png';
-import DfPlayerMini from '../assets/DfPlayerMini.png';
 import Jumpers from '../assets/Jumpers.png';
 import ModuloGPS from '../assets/ModuloGPS.png';
-import ModuloGSM from '../assets/ModuloGSM.png';
 import Protoboard from '../assets/Protoboard.png';
 import RealTimeClock from '../assets/RealTimeClock.png';
 import SensorCardiaco from '../assets/SensorCardiaco.png';
+import AlzhcarePrototipoImg from '../assets/AlzhcarePrototipo.png';
 import { ResponsiveHeader } from "./ResponsiveHeader.jsx";
 
 
@@ -33,7 +31,7 @@ export function Produto(){
 
             <div className="flex flex-row items-center gap-10 mb-5 mt-5 justify-center lg:grid lg:grid-cols-2 lg: mx-[5%]">
                 <div className="">
-                    <img className="rounded-xl w-[165px] h-[125px] lg:w-[550px] lg:h-[400px]" src="https://http2.mlstatic.com/D_NQ_NP_744664-MLB74777346433_022024-O.webp" alt="" />
+                    <img className="rounded-xl w-[165px] h-[125px] lg:w-[550px] lg:h-[400px]" src={AlzhcarePrototipoImg} alt="" />
                 </div>
                 <div className=" [color:var(--color-dark-purple)] w-full max-w-[40%] flex flex-col justify-center items-center">
                     <p className="text-lg font-semibold lg:text-3xl text-center dark:[color:var(--color-white)]">AlzhCare</p>
@@ -48,61 +46,43 @@ export function Produto(){
                 <ComponentesProduto
                     imgSrc={esp32Img}
                     title="Esp32"
-                    value="R$ 00,00"
+                    value="R$ 78,90"
                 />
 
                 <ComponentesProduto
                     imgSrc={AcelerometroGiroscopio}
                     title="Acelerômetro"
-                    value="R$ 00,00"
-                />
-
-                <ComponentesProduto
-                    imgSrc={AutoFalante}
-                    title="Auto Falante"
-                    value="R$ 00,00"
-                />
-
-                <ComponentesProduto
-                    imgSrc={DfPlayerMini}
-                    title="DFPlayer Mini"
-                    value="R$ 00,00"
+                    value="R$ 26,90"
                 />
 
                 <ComponentesProduto
                     imgSrc={Jumpers}
                     title="Jumpers"
-                    value="R$ 00,00"
+                    value="R$ 30,00"
                 />
 
                 <ComponentesProduto
                     imgSrc={ModuloGPS}
                     title="Módulo GPS"
-                    value="R$ 00,00"
-                />
-
-                <ComponentesProduto
-                    imgSrc={ModuloGSM}
-                    title="Módulo GSM"
-                    value="R$ 00,00"
+                    value="R$ 49,99"
                 />
 
                 <ComponentesProduto
                     imgSrc={Protoboard}
                     title="Protoboard"
-                    value="R$ 00,00"
+                    value="R$ 8,46"
                 />
 
                 <ComponentesProduto
                     imgSrc={RealTimeClock}
                     title="Real Time Clock"
-                    value="R$ 00,00"
+                    value="R$ 32,90"
                 />
 
                 <ComponentesProduto
                     imgSrc={SensorCardiaco}
                     title="Sensor Cardíaco"
-                    value="R$ 00,00"
+                    value="R$ 34,90"
                 />
 
             </section>
