@@ -26,73 +26,75 @@ export function GuiaInstrucao() {
       <div className="max-w-sm md:max-w-4xl mx-auto mt-10 mb-20 px-6">
         <h2 className="text-xl font-bold text-center mb-6 md:text-4xl [color:var(--color-dark-purple)] dark:[color:var(--color-white)]">
           Guia de Utilização <br />
-          <span className="text-sm md:text-2xl">Mochila Inteligente para Alzheimer</span>
+          <span className="text-sm md:text-2xl">Sistema de Monitoramento IoT AlzhCare</span>
         </h2>
 
         <div className="flex flex-col gap-6 text-sm leading-relaxed text-justify md:text-lg [color:var(--color-dark-purple)] dark:[color:var(--color-white)]">
           <div>
-            <h3 className="font-bold">1. Como conectar o aplicativo à mochila?</h3>
+            <h3 className="font-bold">1. Preparação Inicial - Ligar a Pochete</h3>
             <p>
-              Ligue a mochila e ative o ESP32. No aplicativo, abra a tela de conexão
-              Bluetooth/Wi-Fi e selecione o dispositivo correspondente à mochila na lista
-              disponível. Após a conexão ser estabelecida, você verá o status
-              "Conectado" no app.
+              Antes de usar o aplicativo, certifique-se que o dispositivo está operacional:
+              Localize o botão de energia na pochete, pressione e mantenha por 2 segundos.
+              O LED indicador deve acender (azul ou verde). Verifique se a bateria está carregada
+              (LED não deve piscar vermelho).
             </p>
           </div>
 
           <div>
-            <h3 className="font-bold">2. Como configurar o GPS pelo aplicativo?</h3>
+            <h3 className="font-bold">2. Configurar Hotspot do Celular</h3>
             <p>
-              No menu principal do app, selecione "Configurações GPS". Aqui, você pode
-              ativar ou desativar o rastreamento, definir a frequência de atualização da
-              localização e visualizar o histórico de posições em um mapa integrado.
+              O dispositivo precisa de conexão com internet. Abra as Configurações do celular,
+              acesse "Ponto de Acesso" ou "Hotspot Móvel" e ative-o. Mantenha o hotspot ligado
+              durante o monitoramento. O dispositivo consome aproximadamente 50-100MB por dia.
+              Configure o ESP32 previamente com as credenciais do seu hotspot.
             </p>
           </div>
 
           <div>
-            <h3 className="font-bold">3. Como programar lembretes pelo app?</h3>
+            <h3 className="font-bold">3. Verificar Conexão</h3>
             <p>
-              Acesse a aba de Lembretes e clique em "Novo Lembrete". Insira o título,
-              descrição, horário e recorrência (diária, semanal, etc.). O lembrete será
-              enviado automaticamente para a mochila, que emitirá alertas sonoros ou
-              vibratórios para o usuário.
+              Aguarde 30-60 segundos para a conexão estabelecer. O LED do ESP32 deve parar
+              de piscar quando conectado. Abra o aplicativo web no navegador e verifique
+              o status "🟢 Conectado" no topo da tela.
             </p>
           </div>
 
           <div>
-            <h3 className="font-bold">4. Como ativar o reconhecimento de pessoas?</h3>
+            <h3 className="font-bold">4. Monitoramento de Sinais Vitais</h3>
             <p>
-              Na seção "Reconhecimento Facial", habilite a opção. Tire ou selecione fotos
-              das pessoas próximas ao usuário. Ao identificar pessoas conhecidas se
-              aproximando, a mochila emitirá notificações para maior segurança.
+              O sistema monitora Frequência Cardíaca (normal: 60-100 bpm), Saturação de Oxigênio
+              (normal: acima de 95%) e Temperatura Corporal (normal: 36-37.5°C). Status verde
+              indica normalidade, vermelho indica alerta. A temperatura exibe tendências
+              (↑ subindo, ↓ descendo, → estável).
             </p>
           </div>
 
           <div>
-            <h3 className="font-bold">5. O que fazer se a conexão entre app e mochila for perdida?</h3>
+            <h3 className="font-bold">5. Localização GPS</h3>
             <p>
-              Verifique se o ESP32 está conectado e funcionando. Reinicie a conexão via
-              Bluetooth/Wi-Fi no aplicativo. Caso persista, reinicie a mochila e o app
-              para restabelecer a comunicação.
+              No card "Localização GPS", clique em "Ver no Mapa" para visualizar o endereço
+              completo e posição exata no mapa do OpenStreetMap. Informações incluem altitude,
+              velocidade e número de satélites. Quanto mais satélites conectados, maior a precisão.
             </p>
           </div>
 
           <div>
-            <h3 className="font-bold">6. Como verificar o status da bateria do ESP32 via aplicativo?</h3>
+            <h3 className="font-bold">6. Sistema de Emergência SOS</h3>
             <p>
-              No app, vá até a seção "Bateria" para visualizar a porcentagem atual de
-              carga. Se houver necessidade, conecte a mochila ao carregador portátil para
-              evitar desligamentos inesperados.
+              O usuário possui um botão físico no ESP32. Ao pressionar o botão SOS, um alerta
+              é enviado instantaneamente, exibindo banner vermelho no aplicativo. Verifique
+              imediatamente a localização GPS, contate emergência (192/193) ou o portador,
+              e confira os sinais vitais.
             </p>
           </div>
 
           <div>
-            <h3 className="font-bold">7. Como rastrear a mochila em tempo real?</h3>
+            <h3 className="font-bold">7. Detecção de Quedas</h3>
             <p>
-              Acesse a aba "Status" e siga as informações com dados atualizados de
-              localização, exibidos em um mapa interativo. Também é possível definir
-              geofences (cercas virtuais), permitindo que cuidadores acompanhem o
-              funcionamento e recebam alertas.
+              O acelerômetro detecta quedas automaticamente. Status: 🧍‍♀️ Estável (parado),
+              🚶‍♀️ Em movimento (velocidade &gt; 0.5 km/h), ⚠️ Queda Detectada (impacto brusco),
+              🔌 Sistema Offline. Em caso de queda, verifique GPS, sinais vitais e entre
+              em contato imediatamente.
             </p>
           </div>
         </div>
