@@ -1,7 +1,6 @@
-import { ResponsiveHeader} from "./ResponsiveHeader.jsx"
+import { ResponsiveHeader } from "./ResponsiveHeader.jsx"
 import { Footer } from "./Footer"
 import Galaxia from "../assets/Galaxia.png"
-import Play from "../assets/Play.png"
 import Fotomais from "../assets/Fotomais.png"
 
 export function Jogo() {
@@ -11,13 +10,11 @@ export function Jogo() {
                 className="min-h-screen w-full bg-cover bg-center flex flex-col"
                 style={{ backgroundImage: `url(${Galaxia})` }}
             >
-
                 <ResponsiveHeader />
-
 
                 <div className="flex flex-col items-center justify-center flex-1 text-center px-4">
                     <h1
-                        className="text-white font-bold text-4xl lg:text-[5.5rem]  leading-tight max-w-2xl"
+                        className="text-white font-bold text-4xl lg:text-[5.5rem] leading-tight max-w-2xl"
                     >
                         MindJourney
                     </h1>
@@ -36,15 +33,24 @@ export function Jogo() {
                 </div>
             </div>
 
-            <div className="w-72 h-44 
-                lg:w-[67.5rem] lg:h-[40rem] 
-                mx-auto -mt-16 lg:-mt-32 
-                bg-[var(--color-light-purple)] rounded-2xl flex items-center justify-center 
-                hover:scale-105 transition">
-                <img src={Play} alt="Play"
-                    className="w-12 h-12 lg:w-[9.3rem] lg:h-[9.3rem]" />
+            {/* === VIDEO SEÇÃO === */}
+            <div
+                className="w-72 h-44 
+                    lg:w-[67.5rem] lg:h-[40rem] 
+                    mx-auto -mt-16 lg:-mt-32 
+                    rounded-2xl overflow-hidden flex items-center justify-center 
+                    hover:scale-105 transition"
+            >
+                <iframe
+                    className="w-full h-full rounded-2xl"
+                    src="https://www.youtube.com/embed/4RiHykoPzMM"
+                    title="MindJourney Trailer"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                ></iframe>
             </div>
-
+            {/* === FIM VIDEO === */}
 
             <div className="bg-[var(--color-chatcolor)] dark:bg-[var(--color-dark-purple-home)] px-4">
                 <div className="items-center justify-items-center flex flex-col gap-6 mt-20 mb-16 text-center [color:var(--color-dark-purple)]">
@@ -56,13 +62,18 @@ export function Jogo() {
                         MindJourney se passa dentro da mente fragmentada de uma pessoa com Alzheimer. Quatro personagens exploram esse mundo perdido, resolvendo puzzles para recuperar fragmentos de memória espalhados. Cada lembrança resgatada ajuda a montar o quebra-cabeça da identidade perdida, enquanto enfrentam desafios que refletem as dificuldades da doença. Com visual pixel art 2D, o jogo convida o jogador a uma jornada emocional pela mente humana em busca da memória e da esperança.
                     </p>
 
-                    <div className="w-[330px] h-[215px]
-                        lg:w-[31.5rem] lg:h-[20.5rem] 
-                        mx-auto mt-4 lg:mt-8 
-                        bg-[var(--color-light-purple)] rounded-2xl 
-                        flex items-center justify-center hover:scale-105 transition">
-                        <img src={Fotomais} alt="Fotomais"
-                            className="w-12 h-12 lg:w-[6.25rem] lg:h-[6.25rem]" />
+                    <div
+                        className="w-[330px] h-[215px]
+                            lg:w-[31.5rem] lg:h-[20.5rem] 
+                            mx-auto mt-4 lg:mt-8 
+                            bg-[var(--color-light-purple)] rounded-2xl 
+                            flex items-center justify-center hover:scale-105 transition"
+                    >
+                        <img
+                            src={Fotomais}
+                            alt="Fotomais"
+                            className="w-12 h-12 lg:w-[6.25rem] lg:h-[6.25rem]"
+                        />
                     </div>
                 </div>
             </div>
