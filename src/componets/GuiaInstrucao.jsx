@@ -18,9 +18,13 @@ export function GuiaInstrucao() {
     </div>
 
       <div className="flex justify-center mt-6 px-4">
-        <div className="w-[300px] h-[180px] md:w-[600px] md:h-[350px] bg-gray-400 rounded-lg flex items-center justify-center shadow-md">
-          <span className="text-3xl md:text-5xl">▶</span>
-        </div>
+        <iframe
+          src="https://www.youtube.com/embed/uzEILGHlh4w"
+          className="w-[300px] h-[180px] md:w-[600px] md:h-[350px] rounded-lg shadow-md"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title="Vídeo de instruções AlzhCare"
+        />
       </div>
 
       <div className="max-w-sm md:max-w-4xl mx-auto mt-10 mb-20 px-6">
